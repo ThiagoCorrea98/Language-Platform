@@ -15,7 +15,7 @@ const generateHiraganaTable = () => {
     }
   );
 
-  const filteredHiragana = hiraganaList.filter(({ kana }) =>
+  const filterHiragana = hiraganaList.filter(({ kana }) =>
     hiraganaCharacters.includes(kana)
   );
 
@@ -23,7 +23,7 @@ const generateHiraganaTable = () => {
   let index = 0;
 
   for (const col of gojuonColumns) {
-    const row = filteredHiragana.slice(index, index + col);
+    const row = filterHiragana.slice(index, index + col);
     index += col;
     rows.push([...row, ...Array(5 - col).fill(null)]);
   }
