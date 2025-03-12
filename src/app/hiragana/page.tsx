@@ -32,13 +32,13 @@ const generateHiraganaTable = () => {
 };
 
 export default function Hiragana() {
-  const hiraganaTable = generateHiraganaTable();
+  const hiraganaTables = generateHiraganaTable();
 
   return (
     <div className="min-h-screen bg-white flex flex-col items-center p-6">
       <h1 className="text-3xl font-bold">Hiragana</h1>
       <div className="grid grid-cols-5 gap-4 mt-6">
-        {hiraganaTable.flat().map((char, index) =>
+        {hiraganaTables.flat().map((char, index) =>
           char ? (
             <div key={index} className="p-4 bg-gray-200 rounded-lg text-center">
               <span className="text-4xl">{char.kana}</span>
