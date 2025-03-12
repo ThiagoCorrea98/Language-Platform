@@ -2,7 +2,7 @@
   "name": "plataforma-jpn",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://thiagocorrea98.github.io/Language-Platform/",
+  "homepage": "https://thiagocorrea98.github.io/",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build && next export",
